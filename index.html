@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="./assets/style.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,12 +13,12 @@
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
-
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
           <li>The head element contains information about the webpage.</li>
           <li>The body element represents the visible content shown to the user.</li>
+          <li>Classes can be used multiple times compared to ids only being able to be used once</li>
         </ul>
       </section>
 
@@ -25,7 +26,26 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li>When you create a stylesheet you need to link it in the html using &lt;link rel="stylesheet" href="./location/name.css"&gt </li>
+          <li>Don't forget to reset defaults by having *{ margin:0; padding:0;} as the first line on your stylesheet.
+          <li>To inline style stuff with css place it in the &lt;head&gt; and use &lt;element style="property:value"&gt; or &lt;style&gt; then type like you normally would on a stylesheet and don't forget the closing tag.
+          <li>A margin indicates how much space we want around the outside of an element.</li>
+          <li>A padding indicates how much space we want around the content inside an element an</li>
+          <li> <strong>SPECIFICITY</strong><br> ID > CLASSES > ELEMENT <br>
+            This is the priority of targeting. !important will overrule other selectors even ones more specific.
+          <li> <strong>Targeting</strong><br>
+            To target an element just type the name of the element<br>
+            To target a class .class-name<br>
+            To target an id #id-name<br>
+            To target everything use an asterik(*)<br>
+            To target specific things chain the class and element by typing both with no comma seperating them<br>
+            To target multiple elements, classes, or ids, use commas to seperate each one you target<br>
+          </li>
+          <li><strong>Margin Collapse</strong><br>
+            When creating margin with two images or boxes horizontally next to each other they combine the margin to decide the distance from each other.<br>
+            When creating margin with two images or boxes vertically next to each other they use the largest margin to decide the distance from each other.
+          </li>
+          <li><em><strong>Psuedo-Class</em></strong><br>You can use :focus, :visited, :disabled, or :hover following the selector to determine when the CSS initiates. (e.g) h1:hover
         </ul>
       </section>
 
